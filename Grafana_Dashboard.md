@@ -128,7 +128,7 @@ Instead of creating a dashboard from scratch, import a prebuilt Cosmos Validator
 
 Go to Grafana → Dashboards.\
 Click New → Import.\
-Use Union_Validator.json\
+Use [Union_Validator.json](https://github.com/eastwoodnft/Union-Testnet-9/blob/main/Union_Validator.json)\
 Click Load.\
 Select Prometheus as the data source.\
 Click Import.\
@@ -140,9 +140,9 @@ Click Import.\
 ✔ Grafana running on localhost:3000\
 ✔ Imported the Cosmos validator dashboard\
 
-# If you can't access Prometheus (http://your-server-ip:9090) or Grafana (http://your-server-ip:3000), here are the steps to troubleshoot and fix it.
+If you can't access Prometheus (http://your-server-ip:9090) or Grafana (http://your-server-ip:3000), here are the steps to troubleshoot and fix it.
 
-1. Check if Prometheus & Grafana are Running
+Check if Prometheus & Grafana are Running
 Run these commands:
 
 Check Prometheus
