@@ -23,7 +23,7 @@ eval $(echo 'export PATH=$PATH:$HOME/go/bin' | tee -a $HOME/.profile)
 6. Download Binaries
 ```
 mkdir -p $HOME/.union/cosmovisor/genesis/bin
-wget -O $HOME/.union/cosmovisor/genesis/bin/uniond https://github.com/unionlabs/union/releases/download/uniond%2Fv0.25.0/uniond.x86_64-linux.tar.gz
+curl https://github.com/unionlabs/union/releases/download/uniond%2Fv0.25.0/uniond.x86_64-linux.tar.gz | sudo tar -xzf - -C $HOME/.union/cosmovisor/genesis/bin/uniond
 chmod +x $HOME/.union/cosmovisor/genesis/bin/uniond
 ```
 7. Create application symlinks
