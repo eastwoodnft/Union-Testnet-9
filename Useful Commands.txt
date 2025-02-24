@@ -1,0 +1,14 @@
+unjail validator
+uniond tx slashing unjail --from wallet --chain-id union-testnet-9
+
+view validator details
+uniond query staking validators
+
+claim rewards
+uniond tx distribution withdraw-validator-commission wallet --from wallet
+
+delegate
+uniond tx staking delegate $(uniond keys show wallet --bech val -a) 1000000muno --from wallet --chain-id union-testnet-9
+
+save log file
+sudo journalctl -u union-testnet.service -S <date in YYYY-MM-DD HH:MM:SS> --no-tail > test.log
