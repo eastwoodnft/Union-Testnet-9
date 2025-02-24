@@ -105,7 +105,12 @@ sed -i -e 's|^pruning *=.*|pruning = "default"|' $HOME/.union/config/app.toml
 ```
 sed -i -e 's|^timeout_commit *= "5s"*|timeout_commit = "3s"|' $HOME/.union/config/config.toml
 ```
-19. Start the Node and check the logs
+19. Download Snapshot
+```
+curl -L https://snapshots.kjnodes.com/union-testnet/snapshot_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.union
+[[ -f $HOME/.union/data/upgrade-info.json ]] && cp $HOME/.union/data/upgrade-info.json $HOME/.union/cosmovisor/genesis/upgrade-info.json
+```
+20. Start the Node and check the logs
 ```
 sudo systemctl start union-testnet.service && sudo journalctl -u union-testnet.service -f --no-hostname -o cat
 ```
