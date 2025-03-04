@@ -101,10 +101,6 @@ sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0muno\"|" $HOME/.un
 ```
 sed -i -e 's|^pruning *=.*|pruning = "default"|' $HOME/.union/config/app.toml
 ```
-18. Set timout_commit
-```
-sed -i -e 's|^timeout_commit *= "5s"*|timeout_commit = "3s"|' $HOME/.union/config/config.toml
-```
 19. Download Snapshot
 ```
 curl -L https://snapshots.kjnodes.com/union-testnet/snapshot_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.union
