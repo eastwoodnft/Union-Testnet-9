@@ -1,10 +1,3 @@
-
-
-delegate
-uniond tx staking delegate $(uniond keys show wallet --bech val -a) 1000000muno --from wallet --chain-id union-testnet-9
-
-
-
 # Useful Commands for Union Blockchain
 
 This document provides a collection of useful commands for managing keys, validators, tokens, governance, and node maintenance on the Union blockchain (testnet: `union-testnet-9`).
