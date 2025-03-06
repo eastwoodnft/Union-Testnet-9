@@ -1,9 +1,9 @@
 # Union-Testnet-9
-Detailed steps for how to create a validator using Digital Ocean Droplets!
+Detailed steps for how to create a validator using a VPS!
 
-1. Create a project on Digital Ocean
+1. Create a project on Linode
 
-2. Spin up a droplet, you'll need at least 8GB of RAM, 250GB + of storage, and 4+ vCPU
+2. Spin up a droplet, you'll need at least 64GB of RAM, 500GB + of storage, and 16+ vCPU
 
 3. Login via the console
 
