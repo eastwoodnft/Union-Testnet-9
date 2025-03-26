@@ -19,10 +19,6 @@ Create the symlink for the test-patch
 ```
 ln -sf /root/.union/cosmovisor/upgrades/test-patch /root/.union/cosmovisor/current
 ```
-Expected output:
-```
-lrwxrwxrwx 1 root root ... /root/.union/cosmovisor/current -> /root/.union/cosmovisor/upgrades/test-patch
-```
 
 ## Verify the setup
 Check symlink
@@ -31,7 +27,7 @@ ls -l /root/.union/cosmovisor/current
 ```
 Expected output:
 ```
--r-xr-xr-x 1 root root 107796368 ... uniond
+lrwxrwxrwx 1 root root 32 Mar 26 13:54 /root/.union/cosmovisor/current -> /root/.union/cosmovisor/test-patch/
 ```
 Check the bin/ directory:
 ```
