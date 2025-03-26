@@ -9,7 +9,7 @@ chmod +x $HOME/.union/cosmovisor/upgrades/test-patch/uniond
 rm uniond.x86_64-linux.tar.gz
 ```
 
-## Prepare binaries for Cosmovisor
+## Prepare Cosmovisor
 
 Remove the old symlink
 ```
